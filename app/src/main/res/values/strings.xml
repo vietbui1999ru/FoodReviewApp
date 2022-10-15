@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FoodReviewApplication</string>
+    <string name="log_in">Log In</string>
+    <string name="food_review">Food Review</string>
 </resources>
