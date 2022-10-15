@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.foodreviewapplication'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.foodreviewapplication"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -60,7 +60,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
 
     //Card stack
-    implementation 'com.yuyakaido.android:card-stack-view:3.0.0'
+//    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
 
     //Material
     implementation 'com.google.android.material:material:1.6.1'
@@ -69,7 +69,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     //Flutter
-    implementation 'io.flutter:flutter_embedding_release:2.0.0-1.0.pre.1'
+//    implementation 'io.flutter:flutter_embedding_release:2.0.0-1.0.pre.1'
 
 
 
