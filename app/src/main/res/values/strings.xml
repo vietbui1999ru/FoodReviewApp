@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FoodReviewApplication</string>
     <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
     <string name="food_review">Food Review</string>
     <string name="app_splash_image">foodReviewAppImage</string>
 </resources>

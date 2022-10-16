@@ -9,11 +9,10 @@
         android:id="@+id/logInText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/log_in"
+        android:layout_marginBottom="20dp"
+        android:text="@string/sign_up"
         app:layout_constraintBottom_toTopOf="@+id/editEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -22,10 +21,10 @@
         android:id="@+id/editEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
+        android:text="email"
         app:layout_constraintBottom_toTopOf="@+id/editPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,67 +34,40 @@
         android:id="@+id/editPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
+        android:hint="Enter password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmail" />
 
-    <Button
-        android:id="@+id/sign_in_button"
+    <EditText
+        android:id="@+id/confirmPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Log In"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
-    <TextView
-        android:id="@+id/no_account"
+    <Button
+        android:id="@+id/sign_up_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
-        android:text="Don't have an account?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/go_to_sign_up"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
-
-    <TextView
-        android:id="@+id/go_to_sign_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
-        android:text="Sign Up here"
-        android:clickable="true"
+        android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/no_account"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="editPassword" />
-
-    <ImageView
-        android:id="@+id/app_image"
-        android:layout_width="318dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/logInText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/food_app_icon" />
+        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>
